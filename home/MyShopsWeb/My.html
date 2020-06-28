@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+  <meta charset="UTF-8">
+  <title>个人中心</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+  <link rel="stylesheet" href="css/index.css">
+  <script>
+
+    
+    $(function () {
+      $('#myTab li:eq(1) a').tab('show');
+    });
+  </script>
+
+  <style>
+    .nav-tabs {
+      width: 200%;
+      border-bottom: 0px;
+    }
+
+    /* 标签页 */
+    .fx-con {
+      display: -webkit-flex;
+      display: flex;
+      width: 100%;
+      height: 100%;
+    }
+
+    .fx-it {
+      padding: 5px;
+      width: 25%;
+      height: 100%;
+      margin: 10px;
+    }
+
+    .fx-ithot {
+      width: 75%;
+      height: 100%;
+      margin: 10px;
+    }
+
+    /* 垂直标签 */
+    .container {
+      margin-right: 0;
+      margin-left: -15px;
+      margin-top: 50px;
+    }
+
+    .nav>.nav-item {
+      width: 100%;
+      text-align: center;
+    }
+
+
+    body {
+      position: relative;
+    }
+
+    ul.nav-pills {
+      top: auto;
+      position: fixed;
+    }
+
+    div.col-8 div {
+      width: 100%;
+      height: 100%;
+    }
+
+    .nav-pills>li+li {
+      margin-left: 0px;
+    }
+
+    .bg-success {
+      background-color: #ffffff !important;
+    }
+
+    .bg-warning {
+      background-color: #ffffff !important;
+    }
+
+    .bg-secondary {
+      background-color: #ffffff !important;
+    }
+
+    .card {
+      margin: 10px;
+    }
+
+    div.col-8 div {
+      height: auto;
+    }
+
+    .card-footer{
+      text-align: right;
+    }
+    .card-footer a{
+      color: #007bff;
+    }
+
+    .nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link {
+      color: #337ab7;
+      background-color: white;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- 头部 -->
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header" style="margin-right: auto;">
+        <a href="index.html" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-home">首页</span> 
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" style="margin: auto;">
+    <div class="card" style="width:300px;margin: auto;">
+      <img class="card-img-top" src="../MyShopsWeb/photo/其他视图/img_avatar.png" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <input type="file" id="myFile" name="filename2">
+
+        <div class="mt-3">
+          <button type="submit" class="btn btn-primary">提交</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 标签页 -->
+  <div class="bianqian" style="margin: 10px;">
+    <ul id="myTab" class="nav nav-tabs">
+      <li class="active" data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+        <a href="#home" data-toggle="tab">商品交易</a>
+      </li>
+      <li><a href="#Personaldata" data-toggle="tab">个人信息</a></li>
+    </ul>
+
+    <div id="myTabContent" class="tab-content">
+      <div class="tab-pane fade in active" id="home">
+
+        <div class="container-fluid">
+          <div class="row">
+            <nav class="col-sm-3 col-4" id="myScrollspy">
+              <ul class="nav nav-pills flex-column">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">买家方</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#section1">已购商品</a>
+                    <a class="dropdown-item" href="#section2">待付款商品</a>
+                    <a class="dropdown-item" href="#section3">优惠卷</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">卖家方</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#section4">已售出商品</a>
+                    <a class="dropdown-item" href="#section5">正在发布的商品</a>
+                    <a class="dropdown-item" href="#section6">商品管理</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">服务</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#section7">店面装修</a>
+                    <a class="dropdown-item" href="#section8">运营和维护</a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+            <div class="col-sm-9 col-8">
+              <h1>买家方</h1>
+              <div id="section1" class="bg-success">
+                <div class="card">
+                  <div class="card-header">已购商品</div>
+                  <div class="card-body">内容
+                  </div>
+                  <div class="card-footer"><a href="">&nbsp;>>更多&nbsp;</a></div>
+                </div>
+              </div>
+              <br>
+              <div id="section2" class="bg-success">
+                <div class="card">
+                  <div class="card-header">待付款商品</div>
+                  <div class="card-body">内容
+                  </div>
+                  <div class="card-footer"><a href="ShoppingCart.html">&nbsp;>>更多&nbsp;</a></div>
+                </div>
+              </div>
+              <br>
+              <div id="section3" class="bg-success">
+                <div class="card">
+                  <div class="card-header">优惠卷</div>
+                  <div class="card-body">内容
+                  </div>
+                  <div class="card-footer"><a href="">&nbsp;>>更多&nbsp;</a></div>
+                </div>
+              </div>
+              <br>
+              <br>
+              <h1>卖家方</h1>
+              <div id="section4" class="bg-warning">
+                <div class="card">
+                  <div class="card-header">已售出商品</div>
+                  <div class="card-body">内容
+                  </div>
+                  <div class="card-footer"><a href="">&nbsp;>>更多&nbsp;</a></div>
+                </div>
+              </div>
+              <br>
+              <div id="section5" class="bg-warning">
+                <div class="card">
+                  <div class="card-header">正在发布的商品</div>
+                  <div class="card-body">内容
+                  </div>
+                  <div class="card-footer"><a href="">&nbsp;>>更多&nbsp;</a></div>
+                </div>
+              </div>
+              <br>
+              <div id="section6" class="bg-warning">
+                <div class="card">
+                  <div class="card-header">商品管理</div>
+                  <div class="card-body">内容
+                  </div>
+                  <div class="card-footer"><a href="">&nbsp;>>更多&nbsp;</a></div>
+                </div>
+              </div>
+              <br>
+              <br>
+              <h1>服务</h1>
+              <div id="section7" class="bg-secondary">
+                <div class="card">
+                  <div class="card-header">店面装修</div>
+                  <div class="card-body">内容
+                  </div>
+                  <div class="card-footer"><a href="">&nbsp;>>更多&nbsp;</a></div>
+                </div>
+              </div>
+              <br>
+              <div id="section8" class="bg-secondary">
+                <div class="card">
+                  <div class="card-header">运营和维护</div>
+                  <div class="card-body">内容
+                  </div>
+                  <div class="card-footer"><a href="">&nbsp;>>更多&nbsp;</a></div>
+                </div>
+              </div>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="Personaldata">
+        <div style="padding: 100px 100px 10px;">
+          <form class="bs-example bs-example-form" role="form">
+
+            <div class="input-group">
+              <span class="input-group-addon">用户名</span>
+              <input type="text" class="form-control">
+            </div>
+
+            <br>
+            <div class="input-group">
+              <span class="input-group-addon">姓名</span>
+              <input type="text" class="form-control" placeholder="">
+            </div>
+
+            <br>
+            <div class="input-group">
+              <span class="input-group-addon">联系电话</span>
+              <input type="text" class="form-control">
+            </div>
+
+            <br>
+            <div class="input-group">
+              <span class="input-group-addon">地址</span>
+              <input type="text" class="form-control">
+            </div>
+
+            <br>
+            <div class="input-group">
+              <span class="input-group-addon">电子邮箱</span>
+              <input type="text" class="form-control" placeholder="">
+              <span class="input-group-addon">@</span>
+            </div>
+
+            <br>
+            <div class="input-group">
+              <span class="input-group-addon">传真</span>
+              <input type="text" class="form-control">
+              <span class="input-group-addon">.00</span>
+            </div>
+            <br>
+            <div class="money">
+              <div class="btn-group">
+                <button type="button" class="btn btn-default">请选择银行卡</button>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">农业银行</a></li>
+                  <li><a href="#">建设银行</a></li>
+                  <li><a href="#">中国工商银行</a></li>
+                  <li><a href="#">中国银行</a></li>
+                </ul>
+              </div>
+              <form>
+                <label class="radio-inline"><input type="radio" name="optradio">支付宝</label>
+                <label class="radio-inline"><input type="radio" name="optradio">微信</label>
+              </form>
+            </div>
+            <br>
+          </form>
+          <button type="button" class="btn btn-primary">提交</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

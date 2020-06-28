@@ -1,0 +1,115 @@
+.first {
+    margin-right: 1150px;
+    margin-left: 300px;
+    margin-top: 110px;
+    padding-bottom: 10px;
+    position: fixed;
+    /* display: -webkit-flex; */
+    display: flex;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+}
+
+.Personal {
+    /* position: fixed; */
+    padding: 10px 10px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.Personal-frame {
+    padding: 5px 5px 5px 5px;
+    background-color: rgb(255, 255, 255);
+    /* position:absolute; */
+}
+
+.Personal-inside {
+    padding: 5px 0px 5px 0px;
+}
+
+.Personal-inside img {
+    padding: 5px 5px 5px 5px;
+    background-color: rgb(218, 218, 218);
+}
+
+.MyUserName {
+    padding: 5px 10px 10px 10px;
+    text-align: center;
+
+}
+
+.Personal-out {
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #ffffff;
+}
+
+.Personal-Navbar {
+    border-bottom: 5px solid #ffffff;
+}
+
+.Personal-Navbar a {
+    text-align: center;
+    line-height: 20px;
+    background-color: #eaf7de;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #eeeeee;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* 按钮 */
+.Button-Member {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #1e94f4;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 5px;
+    width: 100px;
+    height: 35px;
+
+    cursor: pointer;
+    margin: 5px;
+}
+
+.Button-Member span {
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+
+
+/* 右边框 */
+.Personal-Lowframe {
+    background-color: rgb(255, 255, 255);
+    width: 900px;
+    height: 100px;
+    margin: 10px;
+}
+
+.Lowframe-qt {
+    padding: 1px;
+    border-radius: 15px/50px;
+    border: 5px outset rgb(184, 248, 159);
+    background: #a7e76c;
+    width: 894px;
+    text-align: center;
+    font-family:Arial,Helvetica,sans-serif;
+    font-size: 5px;
+}
+
+.Lowframe-Square {
+    margin: 10px 0px 5px 3px;
+    padding: 5px;
+    border: 2px solid #cfcfcfef;
+    width: 886px;
+    height: 650px;
+}

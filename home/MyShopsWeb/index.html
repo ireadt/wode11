@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+
+  <link rel="stylesheet" href="css/index.css">
+  <title>主页</title>
+</head>
+<style>
+  /* 尾部 */
+  .Web-tail {
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: rgb(33, 150, 240);
+  }
+
+  .Web-tail p {
+    color: rgb(80, 80, 80);
+  }
+
+  .Web-tail a {
+    color: white;
+  }
+
+  .Service-list {
+    padding: 20px;
+  }
+
+  .modal-title {
+    margin: auto;
+  }
+
+  .modal-header {
+    border-bottom: 0;
+  }
+
+  .modal-footer {
+    border-top: 0;
+  }
+
+  .carousel-indicators {
+    display: none;
+  }
+</style>
+<script>
+  $(function () {
+    $("[data-toggle='popover']").popover();
+  });
+</script>
+
+<body style="padding-right: 0;">
+
+  <div class="topnav" >
+    <a class="active" href="My.html">登录</a>
+    <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="搜索.." name="search" style="display:initial;">
+        <button type="submit">搜索</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="hp Home-Page">
+    <!-- 导航栏 -->
+    <ul class="nav nav-tabs">
+      <li><a data-toggle="modal" data-target="#myModal">个人中心</a>
+        <div class="modal fade" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- 模态框头部1 -->
+              <div><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+              <div class="modal-header">
+                <h4 class="modal-title" style="text-align: center;">请登录</h4>
+              </div>
+              <!-- 模态框主体 -->
+              <div class="modal-body" style="margin: auto;">
+                <button type="button" class="btn btn-secondary" style="margin: auto;background-color: #0089ff;">
+                  <a href="landing.html" style="color: white;">登录</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li><a data-toggle="collapse" href="#collapseTwo">应用导航</a></li>
+      <li><a data-toggle="collapse" href="#collapseThree">商品货源</a></li>
+      <li><a href="#">供应商社区</a></li>
+    </ul>
+    <!-- 折叠 -->
+    <div id="collapseTwo" class="collapse">
+      <nav class="breadcrumb">
+        <span class="breadcrumb-item active">相关内容</span>
+      </nav>
+      <nav class="breadcrumb" style="background-color: rgb(255, 255, 255);">
+        <a class="breadcrumb-item" href="#">行业市场</a>
+        <a class="breadcrumb-item" href="#">特色市场</a>
+        <a class="breadcrumb-item" href="#">商品采购</a>
+        <a class="breadcrumb-item" href="#">交易平台</a>
+      </nav>
+    </div>
+    <div id="collapseThree" class="collapse">
+      <nav class="breadcrumb">
+        <span class="breadcrumb-item active">地区</span>
+      </nav>
+      <nav class="breadcrumb" style="background-color: rgb(255, 255, 255);">
+        <a class="breadcrumb-item" href="#">美国</a>
+        <a class="breadcrumb-item" href="#">德国</a>
+        <a class="breadcrumb-item" href="#">中国</a>
+        <a class="breadcrumb-item" href="#">日本</a>
+        <a class="breadcrumb-item" href="#">韩国</a>
+        <a href="" style="position:absolute;right: 0;">≥≥更多</a>
+      </nav>
+    </div>
+
+    <!-- 轮播图 -->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+      <!-- 指示符 -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+      <!-- 轮播图片 -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../MyShopsWeb/photo/轮播图/轮播1.jpg">
+          <div class="carousel-caption">
+            <p></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../MyShopsWeb/photo/轮播图/轮播2.jpg">
+          <div class="carousel-caption">
+            <p></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../MyShopsWeb/photo/轮播图/轮播3.jpg">
+          <div class="carousel-caption">
+            <p></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 左右切换按钮 -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+    <!-- 列表 -->
+
+    <ul class="list-group">
+      <li class="list-group-item">特价商品<a href="#" class="fa fa-angle-double-right">更多</a></li>
+    </ul>
+
+    <!-- 视图(特价商品) -->
+    <div>
+      <div class="row">
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <a href="#"><img src="../MyShopsWeb/photo/其他视图/qt1.jpg" alt="通用的占位符缩略图"></a>
+            <div class="caption">
+              <h3>红富士草莓</h3>
+              <p style="margin-right: 125px;">2箱起批</p>
+              <p>已售100批</p>
+              <p>
+                <h4 style="text-align:right;font-size: 18px;margin-right: 5px;">¥200</h4>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <a href="#"><img src="../MyShopsWeb/photo/其他视图/qt2.jpg" alt="通用的占位符缩略图"></a>
+            <div class="caption">
+              <h3>红富士草莓</h3>
+              <p style="margin-right: 125px;">2箱起批</p>
+              <p>已售100批</p>
+
+              <p>
+                <h4 style="text-align:right;font-size: 18px;margin-right: 5px;">¥200</h4>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <a href="#"><img src="../MyShopsWeb/photo/其他视图/qt3.jpg" alt="通用的占位符缩略图"></a>
+            <div class="caption">
+              <h3>红富士草莓</h3>
+              <p style="margin-right: 125px;">2箱起批</p>
+              <p>已售100批</p>
+
+              <p>
+                <h4 style="text-align:right;font-size: 18px;margin-right: 5px;">¥200</h4>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <a href="#"><img src="../MyShopsWeb/photo/其他视图/qt4.jpg" alt="通用的占位符缩略图"></a>
+            <div class="caption">
+              <h3>红富士草莓</h3>
+              <p style="margin-right: 125px;">2箱起批</p>
+              <p>已售100批</p>
+
+              <p>
+                <h4 style="text-align:right;font-size: 18px;margin-right: 5px;">¥200</h4>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <a href="#"><img src="../MyShopsWeb/photo/其他视图/qt5.jpg" alt="通用的占位符缩略图"></a>
+            <div class="caption">
+              <h3>红富士草莓</h3>
+              <p style="margin-right: 125px;">2箱起批</p>
+              <p>已售100批</p>
+
+              <p>
+                <h4 style="text-align:right;font-size: 18px;margin-right: 5px;">¥200</h4>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <a href="#"><img src="../MyShopsWeb/photo/其他视图/qt6.jpg" alt="通用的占位符缩略图"></a>
+            <div class="caption">
+              <h3>红富士草莓</h3>
+              <p style="margin-right: 125px;">2箱起批</p>
+              <p>已售100批</p>
+
+              <p>
+                <h4 style="text-align:right;font-size: 18px;margin-right: 5px;">¥200</h4>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <a href="#"><img src="../MyShopsWeb/photo/其他视图/qt1.jpg" alt="通用的占位符缩略图"></a>
+            <div class="caption">
+              <h3>红富士草莓</h3>
+              <p style="margin-right: 125px;">2箱起批</p>
+              <p>已售100批</p>
+
+              <p>
+                <h4 style="text-align:right;font-size: 18px;margin-right: 5px;">¥200</h4>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <a href="#"><img src="../MyShopsWeb/photo/其他视图/qt2.jpg" alt="通用的占位符缩略图"></a>
+            <div class="caption">
+              <h3>红富士草莓</h3>
+              <p style="margin-right: 125px;">2箱起批</p>
+              <p>已售100批</p>
+
+              <p>
+                <h4 style="text-align:right;font-size: 18px;margin-right: 5px;">¥200</h4>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 尾部 -->
+    <div class="Service Web-tail">
+      <div class="Service-box">
+        <div class="Service-list">
+          <p>
+            <a href="#">联系客服</a>
+            &nbsp;|&nbsp;
+            <a href="#">技术支持</a>
+            &nbsp;|&nbsp;
+            <a href="#">资料</a>
+            &nbsp;|&nbsp;
+            <a href="#">企业合作</a>
+            &nbsp;|&nbsp;
+            <a href="#">意见反馈</a>
+          </p>
+          
+          <p>
+            xxxxxxxx xxxxxxx. xxxxxx xxxxxx xxxxxxxx.
+          </p>
+
+          <p>
+            <a href="#">©1900 星泰淘批发商城app 版权所有</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+	<meta charset="UTF-8">
+	<title>电影天堂网</title>
+	<link rel="shortcut icon" href="./images/葫芦娃.ico" type="image/icon">
+	<link href="css/base.css" rel="stylesheet">
+	<link href="css/index.css" rel="stylesheet">
+</head>
+<body>
+<div class="warp" id="banner">
+		<div class="layer"></div>
+		<div class="header">
+			<div class="text clearfix">
+				<input type="text" class="fl" id="text" placeholder="框内字" />
+			
+			<div class="fl">
+				<div class="fl sou">搜索</div>
+			</div>
+			<div class="login login_y">
+				<div class="baby"></div>
+				<div class="close"></div>
+				<!-- <div class="account">
+					<div class="clearfix">
+						<p class="fl">账 号 ：</p>
+						<input type="text" placeholder="请输入手机/邮箱" class="fl">
+					</div>
+					<div class="clearfix" style="margin-top:24px">
+						<p class="fl">密 码 ：</p>
+						<input type="text" placeholder="请输入密码" class="fl">
+					</div>
+				</div>
+				<div class="memory clearfix">
+					<input type="checkbox" checked="true" class="fl">
+					<p class="fl">记住我</p>
+					<a href="javascript:;" class="fl" style="padding-left:85px;">找回密码</a> 
+					<div class="fl" style="padding-left:11px;padding-right:11px;">|</div>
+					<a href="javascript:;" class="fl">立即注册</a>
+				</div> 
+				 <div class="Landin"><a href="Landing.html">登录</a></div> 
+				<<div class="loginto"><a href="Landing.html">登录</a></div>
+				<div class="other_1"></div>
+			</div>
+			<div class="enroll enroll_y">
+				<div class="baby"></div>
+				<div class="close"></div>
+				<div class="account">
+					<div class="clearfix">
+						<p class="fl">手&nbsp&nbsp&nbsp机 ：</p>
+						<input type="text" placeholder="请输入手机号码" class="fl">
+					</div>
+					<div class="clearfix" style="margin-top:8px">
+						<p class="fl">密&nbsp&nbsp&nbsp码 ：</p>
+						<input type="text" placeholder="8~20位字母、数字或字符，至少包含两种" class="fl">
+					</div>
+					<div class="clearfix" style="margin-top:8px">
+						<p class="fl">验证码 ：</p>
+						<input type="text" placeholder="请输入右侧字母" class="fl" style="width:107px;height:30px;">
+						<div class="yzm fl"></div>
+						<div class="change fl"></div>
+					</div>
+				</div>
+				<div class="clearfix agree">
+					<input type="text" placeholder="8~20位字母、数字或字符，至少包含两种" class="fl" style="width:268px;height:30px;border:1px solid #ccc;padding-left:7px;">
+					<input type="checkbox" checked="true" class="fl" style="margin-top:10px; margin-right:10px;">
+					<p class="fl" style="margin-top:8px;">我同意</p>
+					<a href="javascript:;" class="fl" style="margin-top:8px;">《用户服务协议》</a>
+					<a href="javscript:;" class="fr" style="margin-top:8px;">立即登录</a>
+				</div> -->
+				<div class="loginto" style="margin-left:97px;width:278px; margin-top:20px;">
+					<a href="javascript:;">注册</a>
+				</div>
+			</div>
+		</div>
+		<ul class="menu clearfix">
+			<li class="fl login1"><a href="Landing.html">登录</a></li>
+			<li class="fl enroll1"><a href="Registered.html">注册</a></li>
+			<li class="fl"><a href="javascript:;">开通VIP</a></li>
+			<li class="fl upload" id="upload">
+				<a href="javascript:;">上传</a>
+				<div class="upload1" id="Upload1">
+					<a href="javascript:;" style="color:#000;margin-top:5px;">上传视频</a>
+					<a href="javascript:;" style="color:#000">制作视频</a>
+					<a href="javascript:;" style="color:#000">我的空间</a>
+					<a href="javascript:;" style="color:#000">视频管理</a>
+					<a href="javascript:;" style="color:#000">流量分析</a>
+					<a href="javascript:;" style="color:#000">申请分成</a>
+					<div class="jiao"></div>
+				</div>
+				<i></i>
+			</li>
+			<li class="fl">
+				<a href="javascript:;">下载客户端</a>
+			</li>
+			<li class="fl message" id="message">
+				<a href="javascript:;">消息</a>
+				<div id="message1" class="message1">
+					<div class="jiao jiao1"></div>
+					<span class="active">更新提示</span>
+					<span>用户推荐</span>
+					<span style="margin-right:0;">系统通知</span>
+					<div class="tab">
+						<div class="active">您还没有收到新的更新消息</div>
+						<div>暂时还没有新的推荐</div>
+						<div>您还没有登录，<a href="javascript:;" class="loginline login1">登录</a>后可以可以查看完整的通知列表</div>
+					</div>
+					<a href="javascript:;" class="andmore">查看更多</a>
+				</div>
+				<i></i>
+			</li>
+			<li class="fl" id="pr">
+				<a href="javascript:;">播放记录</a>
+				<div id="pr1" class="message1">
+					<div class="jiao jiao2"></div>
+					<div class="pr_text">
+						<p>暂无长视频（电视剧、纪录片、动漫、综艺、电影）播放记录，<b>查看全部</b></p>
+					</div>
+				</div>
+				<i></i>
+			</li>
+			<li class="fl my1"><a href="My.html">我的</a></li>
+		</ul>
+		</div>
+
+
+		<div class="form">
+			<ul class="clearfix" id="scroll">
+				<li class="fl active"><a href="javascript:;" class="colors">1</a></li>
+				<li class="fl"><a href="javascript:;">2</a></li>
+				<li class="fl"><a href="javascript:;">3</a></li>
+				<li class="fl"><a href="javascript:;">4</a></li>
+				<li class="fl"><a href="javascript:;">5</a></li>
+				<li class="fl"><a href="javascript:;">6</a></li>
+				<li class="fl"><a href="javascript:;">7</a></li>
+				<li class="fl"><a href="javascript:;">8</a></li>
+				<!-- <li class="fl"><a href="javascript:;">9</a></li> -->
+				<!-- <li class="fl"><a href="javascript:;">9</a></li> -->
+				
+			</ul>
+		</div>
+		<div class="nav clearfix">
+			<div class="login fl">
+				<h1>爱奇艺</h1>
+				<img src="images/zi.png">
+			</div>
+			<div class="fl run"></div>
+                <ul class="nav_two fl">
+                 	<li class="fl"><a href="javascript:;">电影</a></li>
+                  	<li class="fl"><a href="javascript:;">电视剧</a></li>
+                  	<li class="fl"><a href="javascript:;">片花</a></li>
+                	<li class="fl"><a href="javascript:;">综艺</a></li>
+                	<li class="fl"><a href="javascript:;">微电影</a></li>
+                 	<li class="fl"><a href="javascript:;">脱口秀</a></li>
+          		</ul>
+              	<ul class="nav_three fl">
+                	<li class="fl"><a href="javascript:;">动漫</a></li>
+                 	<li class="fl"><a href="javascript:;">生活</a></li>
+                	<li class="fl"><a href="javascript:;">少儿</a></li>
+                	<li class="fl"><a href="javascript:;">母婴</a></li>
+                	<li class="fl"><a href="javascript:;">游戏</a></li>
+                	<li class="fl"><a href="javascript:;">健康</a></li>
+                </ul>
+              	<ul class="nav_four fl">   
+                	<li class="fl"><a href="javascript:;">音乐</a></li>
+                 	<li class="fl"><a href="javascript:;">搞笑</a></li>
+                 	<li class="fl"><a href="javascript:;">时尚</a></li>
+                	<li class="fl"><a href="javascript:;">原创</a></li>
+               	 	<li class="fl"><a href="javascript:;">旅游</a></li>
+                	<li class="fl"><a href="javascript:;">拍客</a></li>
+               	</ul>
+              	<ul class="nav_five fl">                
+                   	<li class="fl"><a href="javascript:;">财经</a></li>
+                	<li class="fl"><a href="javascript:;">军事</a></li>
+                	<li class="fl"><a href="javascript:;">科技</a></li>
+                	<li class="fl"><a href="javascript:;">教育</a></li>
+                	<li class="fl"><a href="javascript:;">汽车</a></li>
+               	 	<li class="fl"><a href="javascript:;">纪录片</a></li>
+              	</ul>
+
+		</div>
+</div>
+
+<div class="movie clearfix">
+	<div class="fl movie_l">
+		<div class="clearfix movie_h">
+			<div class="fl header"></div>
+			<div class="fl movie_c">
+				<span class="fl">爱奇艺爱电影</span><em class="fl"></em>
+				<span class="fl">网络大电影</span><em class="fl"></em>
+				<span class="fl">VIP会员</span><em class="fl"></em>
+				<span class="fl">盘点2015最耀眼韩国影人TOP10</span><em class="fl"></em>
+				<span class="fl">金鸡百花学院奖短片大赛</span><em class="fl"></em>
+			</div>
+		</div>
+		<ul class="clearfix">
+			<li class="fl scale">
+				<a href="javascript:;">
+					<img src="images/59.jpg" title="电影">
+					<div class="dubo"></div>
+					<div class="zhen1"></div>
+					<div class="gray clearfix">
+						<div class="fl">
+							<p class="first">《星球大战》幕后探班</p>
+							<p class="second">传奇经典 重磅回归</p>
+						</div>
+						<div class="fr third"></div>
+					</div>
+				</a>
+			</li>
+			<li class="fl scale">
+				<a href="javascript:;">
+					<img src="images/49.jpg" title="电影">
+					<div class="zhen1"></div>
+					<div class="gray clearfix">
+						<div class="fl">
+							<p class="first">捉妖记</p>
+							<p class="second">萌笑点齐飞的奇幻巨作</p>
+						</div>
+						<div class="fr four"></div>
+					</div>
+				</a>
+			</li>
+			<li class="fl scale">
+				<a href="javascript:;">
+					<img src="images/50.jpg" title="电影">
+					<div class="zhen1"></div>
+					<div class="gray clearfix">
+						<div class="fl">
+							<p class="first">煎饼侠</p>
+							<p class="second">屌丝男士拯救不开心</p>
+						</div>
+						<div class="fr four"></div>
+					</div>
+				</a>
+			</li>
+			<li class="fl scale">
+				<a href="javascript:;">
+					<img src="images/51.jpg" title="电影">
+					<div class="zhen1"></div>
+					<div class="gray clearfix">
+						<div class="fl">
+							<p class="first">杀破狼2</p>
+							<p class="second">吴京张晋真功夫肉搏</p>
+						</div>
+						<div class="fr four"></div>
+					</div>
+				</a>
+			</li>
+			<li class="fl scale" style="margin-right:0">
+				<a href="javascript:;">
+					<img src="images/52.jpg" title="电影">
+					<div class="zhen1"></div>
+					<div class="gray clearfix">
+						<div class="fl">
+							<p class="first">巴黎假期</p>
+							<p class="second">古天乐郭采洁异国相恋</p>
+						</div>
+						<div class="fr third"></div>
+					</div>
+				</a>
+			</li>
+			<li class="fl scale top">
+				<a href="javascript:;">
+					<img src="images/53.jpg" title="电影">
+					<div class="vip"></div>
+					<div class="zhen1"></div>
+					<div class="gray clearfix">
+						<div class="fl">
+							<p class="first">我的少女时代</p>
+							<p class="second">女版那些年重温少女梦</p>
+						</div>
+						<div class="fr third"></div>
+					</div>
+				</a>
+			</li>
+			<li class="fl scale top">
+				<a href="javascript:;">
+					<img src="images/54.jpg" title="电影">
+					<div class="vip"></div>
+					<div class="zhen1"></div>
+					<div class="gray clearfix">
+						<div class="fl">
+							<p class="first">前任2&nbsp:&nbsp备胎反击战</p>
+							<p class="second">风流郑恺恋上备胎软妹</p>
+						</div>
+						<div class="fr third"></div>
+					</div>
+				</a>
+			</li>
+			<li class="fl scale top">
+				<a href="javascript:;">
+					<img src="images/55.jpg" title="电影">
+					<div class="vip"></div>
+					<div class="zhen1"></div>
+					<div class="gray clearfix">
+						<div class="fl">
+							<p class="first">解救吾先生</p>
+							<p class="second">刘德华刘烨影帝飙戏</p>
+						</div>
+						<div class="fr four"></div>
+					</div>
+				</a>
+			</li>
+			<li class="fl scale top">
+				<a href="javascript:;">
+					<img src="images/56.jpg" title="电影">
+					<div class="vip"></div>
+					<div class="zhen1"></div>
+					<div class="gray clearfix">
+						<div class="fl">
+							<p class="first">剩者为王</p>
+							<p class="second">彭于晏舒淇浪漫姐弟恋</p>
+						</div>
+						<div class="fr third"></div>
+					</div>
+				</a>
+			</li>
+			<li class="fl scale top" style="margin-right:0">
+				<a href="javascript:;">
+					<img src="images/57.jpg" title="电影">
+					<div class="vip"></div>
+					<div class="zhen1"></div>
+					<div class="gray clearfix">
+						<div class="fl">
+							<p class="first">港囧</p>
+							<p class="second">徐峥包贝尔香港暴走</p>
+						</div>
+						<div class="fr four"></div>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="fl movie_r">
+		<div class="movie_b"></div>
+		<ol>
+			<li class="clearfix">
+				<a href="javascript:;">
+					<div class="fl green">1</div>
+					<p class="fl">捉妖记</p>
+					<span class="fr heng"></span>
+				</a>
+			</li>
+			<li class="clearfix">
+				<a href="javascript:;">
+					<div class="fl green">2</div>
+					<p class="fl">解救吾先生</p>
+					<span class="fr up"></span>
+				</a>
+			</li>
+			<li class="clearfix">
+				<a href="javascript:;">
+					<div class="fl green">3</div>
+					<p class="fl">我的少女时代</p>
+					<span class="fr heng"></span>
+				</a>
+			</li>
+			<li class="clearfix">
+				<a href="javascript:;">
+					<div class="fl">4</div>
+					<p class="fl">前任2&nbsp:&nbsp备胎反击战</p>
+					<span class="fr down"></span>
+				</a>
+			</li>
+			<li class="clearfix">
+				<a href="javascript:;">
+					<div class="fl">5</div>
+					<p class="fl">煎饼侠</p>
+					<span class="fr heng"></span>
+				</a>
+			</li>
+			<li class="clearfix">
+				<a href="javascript:;">
+					<div class="fl">6</div>
+					<p class="fl">杀破狼2</p>
+					<span class="fr heng"></span>
+				</a>
+			</li>
+			<li class="clearfix">
+				<a href="javascript:;">
+					<div class="fl">7</div>
+					<p class="fl">港囧</p>
+					<span class="fr heng"></span>
+				</a>
+			</li>
+			<li class="clearfix">
+				<a href="javascript:;">
+					<div class="fl">8</div>
+					<p class="fl">剩者为王</p>
+					<span class="fr up"></span>
+				</a>
+			</li>
+			<li class="clearfix" style="margin-bottom:0;">
+				<a href="javascript:;">
+					<div class="fl">9</div>
+					<p class="fl">碟中谍5&nbsp:&nbsp神秘国度</p>
+					<span class="fr down"></span>
+				</a>
+			</li>
+		</ol>
+		<ul class="movie_r">
+			<li class="scale">
+				<a href="javascript:;">
+					<img src="images/58.jpg" title="电影">
+					<div class="vip"></div>
+					<div class="zhen1"></div>
+					<div class="gray clearfix">
+						<div class="fl">
+							<p class="first">夏洛特烦恼</p>
+							<p class="second">中年屌丝穿越变歌王</p>
+						</div>
+						<div class="fr four"></div>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="v_movie clearfix">
+		<div class="fl" style="border-bottom:1px solid #e1e1e1; width:580px;">
+			<div class="fl v_movie_l"></div>
+			<div class="fl v_movie_r">
+				<span class="fl"><a href="javascript:;">第二届深圳国际微电影节</a></span><em class="fl"></em>
+				<span class="fl"><a href="javascript:;">全国大学生一分钟影像大赛</a></span><em class="fl"></em>
+			</div>
+		</div>
+		<div class="fl" style="border-bottom:1px solid #e1e1e1;padding-bottom:5px; margin-left:20px; width:580px;">
+			<div class="fl v_movie_l1"></div>
+			<div class="fl v_movie_r1">
+				<span class="fl"><a href="javascript:;">《寻龙诀观影前必看》</a></span><em class="fl"></em>
+				<span class="fl"><a href="javascript:;">《万万没想到特辑》</a></span><em class="fl"></em>
+			</div>
+		</div>
+		<ul class="clearfix">
+			<li class="scale fl">
+				<a href="javascript:;">
+					<img src="images/60.jpg" title="电影">
+					<div class="zhen1"></div>
+					<div class="gray">
+						<p class="first">中国“奥巴马”也要二胎 ？</p>
+					</div>
+				</a>
+			</li>
+			<li class="scale fl">
+				<a href="javascript:;">
+					<img src="images/61.jpg" title="电影">
+					<div class="zhen1"></div>
+					<div class="gray">
+						<p class="first">青年创客心中的中国梦</p>
+					</div>
+				</a>
+			</li>
+			<li class="scale fl">
+				<a href="javascript:;">
+					<img src="images/62.jpg" title="电影">
+					<div class="zhen1"></div>
+					<div class="gray">
+						<p class="first">街头上演人狗情未了</p>
+					</div>
+				</a>
+			</li>
+			<li class="scale fl">
+				<a href="javascript:;">
+					<img src="images/63.jpg" title="电影">
+					<div class="zhen1"></div>
+					<div class="gray">
+						<p class="first">三打白骨精&nbsp:&nbsp八戒戏妖精</p>
+					</div>
+				</a>
+			</li>
+			<li class="scale fl">
+				<a href="javascript:;">
+					<img src="images/64.jpg" title="电影">
+					<div class="zhen1"></div>
+					<div class="gray">
+						<p class="first">澳门风云3&nbsp:&nbsp恶搞经典电影</p>
+					</div>
+				</a>
+			</li>
+			<li class="scale fl" style="margin-right:0;">
+				<a href="javascript:;">
+					<img src="images/65.jpg" title="电影">
+					<div class="zhen1"></div>
+					<div class="gray">
+						<p class="first">唐人街探案&nbsp:&nbsp终极预告</p>
+					</div>
+				</a>
+			</li>
+		</ul>
+</div>
+
+<div class="tv clearfix">
+	<div class="fl movie_l">
+		<div class="clearfix movie_h">
+			<div class="fl header"></div>
+			<div class="fl movie_c">
+				<span class="fl">内地</span><em class="fl"></em>
+				<span class="fl">韩剧</span><em class="fl"></em>
+				<span class="fl">日剧</span><em class="fl"></em>
+				<span class="fl">美剧</span><em class="fl"></em>
+				<span class="fl">自制剧</span><em class="fl"></em>
+			</div>
+		</div>
+		<ul class="clearfix">
+			<li class="fl scale">
+				<a href="javascript:;">
+					<img src="images/66.jpg" title="电影">
+					<div class="dubo"></div>
+					<div class="zhen1"></div>
+					<div class="time1"></div>
+					<div class="gray">
+						<p class="first">废材兄弟3</p>
+					</div>
+				</a>
+			</li>
+			<li class="fl scale">
+				<a href="javascript:;">
+					<img src="images/67.jpg" title="电影">
+					<div class="dubo"></div>
+					<div class="time1"></div>
+					<div class="gray">
+						<p class="first">哦我的鬼神大人</p>
+					</div>
+				</a>
+			</li>
+			<li class="fl scale">
+				<a href="javascript:;">
+					<img src="images/68.jpg" title="电影">
+					<div class="time1"></div>
+					<div class="zhen1"></div>
+					<div class="gray">
+						<p class="first">秦时明月</p>
+					</div>
+				</a>
+			</li>
+			<li class="fl scale">
+				<a href="javascript:;">
+					<img src="images/69.jpg" title="电影">
+					<div class="time1"></div>
+					<div class="zhen1"></div>
+					<div class="gray">
+						<p class="first">美丽的秘密</p>
+					</div>
+				</a>
+			</li>
+			<li class="fl scale" style="margin-right:0">
+				<a href="javascript:;">
+					<img src="images/70.jpg" title="电影">
+					<div class="dubo"></div>
+					<div class="time1"></div>
+					<div class="zhen1"></div>
+					<div class="gray">
+						<p class="first">替身</p>
+					</div>
+				</a>
+			</li>
+			<li class="fl scale top">
+				<a href="javascript:;">
+					<img src="images/71.png" title="电影">
+					<div class="time1"></div>
+					<div class="zhen1"></div>
+					<div class="gray">
+						<p class="first">长在面包树上的女人</p>
+					</div>
+				</a>
+			</li>
+			<li class="fl scale top">
+				<a href="javascript:;">
+					<img src="images/72.jpg" title="电影">
+					<div class="time1"></div>
+					<div class="zhen1"></div>
+					<div class="gray">
+						<p class="first">爸爸快长大</p>
+					</div>
+				</a>
+			</li>
+			<li class="fl scale top">
+				<a href="javascript:;">
+					<img src="images/73.jpg" title="电影">
+					<div class="time1"></div>
+					<div class="zhen1"></div>
+					<div class="gray">
+						<p class="first">枪侠</p>
+					</div>
+				</a>
+			</li>
+			<li class="fl scale top">
+				<a href="javascript:;">
+					<img src="images/74.jpg" title="电影">
+					<div class="vip"></div>
+					<div class="zhen1"></div>
+					<div class="dubo"></div>
+					<div class="time1"></div>
+					<div class="gray">
+						<p class="first">蜀山战纪第3季</p>
+					</div>
+				</a>
+			</li>
+			<li class="fl scale top" style="margin-right:0">
+				<a href="javascript:;">
+					<img src="images/75.jpg" title="电影">
+					<div class="vip"></div>
+					<div class="zhen1"></div>
+					<div class="time1"></div>
+					<div class="gray">
+						<p class="first">灵魂摆渡2</p>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="fl movie_r">
+		<div class="movie_b"></div>
+		<ol>
+			<li class="clearfix">
+				<a href="javascript:;">
+					<div class="fl green">1</div>
+					<p class="fl">枪侠</p>
+					<span class="fr heng"></span>
+				</a>
+			</li>
+			<li class="clearfix">
+				<a href="javascript:;">
+					<div class="fl green">2</div>
+					<p class="fl">长在面包树上的女人</p>
+					<span class="fr heng"></span>
+				</a>
+			</li>
+			<li class="clearfix">
+				<a href="javascript:;">
+					<div class="fl green">3</div>
+					<p class="fl">我是赵传奇</p>
+					<span class="fr up"></span>
+				</a>
+			</li>
+			<li class="clearfix">
+				<a href="javascript:;">
+					<div class="fl">4</div>
+					<p class="fl">秦时明月</p>
+					<span class="fr down"></span>
+				</a>
+			</li>
+			<li class="clearfix">
+				<a href="javascript:;">
+					<div class="fl">5</div>
+					<p class="fl">家和万事兴</p>
+					<span class="fr down"></span>
+				</a>
+			</li>
+			<li class="clearfix">
+				<a href="javascript:;">
+					<div class="fl">6</div>
+					<p class="fl">大秧歌</p>
+					<span class="fr heng"></span>
+				</a>
+			</li>
+			<li class="clearfix">
+				<a href="javascript:;">
+					<div class="fl">7</div>
+					<p class="fl">废材兄弟3</p>
+					<span class="fr heng"></span>
+				</a>
+			</li>
+			<li class="clearfix">
+				<a href="javascript:;">
+					<div class="fl">8</div>
+					<p class="fl">俺娘田小草</p>
+					<span class="fr heng"></span>
+				</a>
+			</li>
+		</ol>
+		<ul class="movie_r">
+			<li class="scale">
+				<a href="javascript:;">
+					<img src="images/76.jpg" title="电影">
+					<div class="gray">
+						<p class="first">神剧亮了&nbsp:&nbsp年度魔性爆款...</p>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div class="cartoon clearfix">
+		<div class="fl" style="width:580px;">
+			<div class="clearfix" style="border-bottom:2px solid #8ac024;padding-bottom:9px;">
+				<div class="fl cartoon_h"></div>
+				<div class="fl cartoon_r">
+					<span class="fl"><a href="javascript:;">真人特区</a></span><em class="fl"></em>
+					<span class="fl"><a href="javascript:;">动画电影</a></span><em class="fl"></em>
+				</div>
+			</div>
+			<div class="fl hai scale">
+				<a href="javascript:;">
+					<img src="images/77.jpg" title="动漫">
+					<div class="today"></div>
+					<div class="dubo"></div>
+					<div class="zhen1"></div>
+					<div class="gray">
+						<p class="first">&nbsp航海王</p>
+					</div>
+				</a>
+			</div>
+			<ul class="fl">
+				<li class="scale">
+					<a href="javascript:;">
+						<img src="images/78.jpg" title="动画" width="180px"; height="101px";>
+						<div class="zhen1"></div>
+						<div class="gray">
+							<p class="first">&nbsp航海王铠甲勇士捕将</p>
+						</div>
+					</a>
+				</li>
+				<li class="scale top">
+					<a href="javascript:;">
+						<img src="images/82.jpg" title="动画">
+						<div class="zhen1"></div>
+						<div class="gray">
+							<p class="first">&nbsp爆笑虫子合集</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="fl" style="margin-left:20px; width:380px;">
+			<div class="kid"></div>
+			<ul class="clearfix">
+				<li class="scale fl" style="margin-right:20px;">
+					<a href="javascript:;">
+						<img src="images/79.jpg" title="动画" width="180px"; height="101px";>
+						<div class="zhen1"></div>
+						<div class="gray">
+							<p class="first">&nbsp洋洋得意喜羊羊</p>
+						</div>
+					</a>
+				</li>
+				<li class="scale fl">
+					<a href="javascript:;">
+						<img src="images/80.jpg" title="动画" width="180px"; height="101px";>
+						<div class="zhen1"></div>
+						<div class="dubo"></div>
+						<div class="gray">
+							<p class="first">&nbsp小花仙第2季</p>
+						</div>
+					</a>
+				</li>
+				<li class="scale top fl" style="margin-right:20px;">
+					<a href="javascript:;">
+						<img src="images/83.jpg" title="动画" width="180px"; height="101px";>
+						<div class="zhen1"></div>
+						<div class="gray">
+							<p class="first">&nbsp小马宝莉第5季</p>
+						</div>
+					</a>
+				</li>
+				<li class="scale top fl">
+					<a href="javascript:;">
+						<img src="images/84.jpg" title="动画" width="180px"; height="101px";>
+						<div class="zhen1"></div>
+						<div class="gray">
+							<p class="first">&nbsp粉红猪小妹</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="fl" style="margin-left:20px; width:180px;">
+			<div class="teach"></div>
+			<ul>
+				<li class="scale">
+					<a href="javascript:;">
+						<img src="images/81.jpg" title="动画" width="180px"; height="101px";>
+						<div class="zhen1"></div>
+						<div class="dubo"></div>
+						<div class="gray">
+							<p class="first">&nbspMV美语Rambo Show</p>
+						</div>
+					</a>
+				</li>
+				<li class="scale top">
+					<a href="javascript:;">
+						<img src="images/85.jpg" title="动画" width="180px"; height="101px";>
+						<div class="zhen1"></div>
+						<div class="gray">
+							<p class="first">&nbsp英国有氧健身操</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+</div>
+
+<div class="pe clearfix">
+		<div class="fl" style="width:380px; margin-right:20px;">
+			<div class="clearfix pe_g">
+				<div class="fl pe_h"></div>
+				<div class="fl" style="margin-left:34px;margin-top:10px;">
+					<span class="fl"><a href="javascript:;">足球</a></span><em class="fl"></em>
+					<span class="fl"><a href="javascript:;">篮球</a></span><em class="fl"></em>
+					<span class="fl"><a href="javascript:;">美网</a></span><em class="fl"></em>
+					<span class="fl"><a href="javascript:;">昆仑决</a></span><em class="fl"></em>
+				</div>
+			</div>
+			<ul class="clearfix" style="margin-top:25px;">
+				<li class="scale fl" style="margin-right:20px;">
+					<a href="javascript:;">
+						<img src="images/86.jpg" title="体育">
+						<div class="gray">
+							<p class="first">&nbsp吉鲁破门阿森纳2-1曼城</p>
+						</div>
+					</a>
+				</li>
+				<li class="scale fl">
+					<a href="javascript:;">
+						<img src="images/87.jpg" title="体育">
+						<div class="gray">
+							<p class="first">&nbsp曼萨诺抵上海受球迷热捧</p>
+						</div>
+					</a>
+				</li>
+				<li class="scale fl top"  style="margin-right:20px";>
+					<a href="javascript:;">
+						<img src="images/88.jpg" title="体育">
+						<div class="zhen1"></div>
+						<div class="gray">
+							<p class="first">&nbsp苏宁接手江苏舜天俱乐部</p>
+						</div>
+					</a>
+				</li>
+				<li class="scale fl top">
+					<a href="javascript:;">
+						<img src="images/89.jpg" title="体育">
+						<div class="zhen1"></div>
+						<div class="gray">
+							<p class="first">&nbsp布拉特不服FIFA判罚上诉</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="fl" style="width:380px; margin-right:20px;">
+			<div class="clearfix pe_g">
+				<div class="fl music"></div>
+				<div class="fl" style="margin-left:34px;margin-top:10px;">
+					<span class="fl"><a href="javascript:;">爱奇艺音乐榜</a></span><em class="fl"></em>
+					</div>
+			</div>
+			<ul class="clearfix" style="margin-top:25px;" >
+				<li class="scale fl" style="margin-right:20px;">
+					<a href="javascript:;">
+						<img src="images/95.jpg" title="音乐" height="253px"; width="180px">
+						<div class="gray">
+							<p class="first">&nbsp EXO- Sing For You</p>
+						</div>
+					</a>
+				</li>
+				<li class="scale fl">
+					<a href="javascript:;">
+						<img src="images/90.jpg" title="音乐">
+						<div class="gray">
+							<p class="first">&nbsp Hands To Mysel</p>
+						</div>
+					</a>
+				</li>
+				<li class="scale fl top">
+					<a href="javascript:;">
+						<img src="images/91.jpg" title="音乐">
+						<div class="zhen1"></div>
+						<div class="gray">
+							<p class="first">&nbsp韩庚-逃不掉</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="fl" style="width:380px;">
+			<div class="clearfix pe_g">
+				<div class="fl fas"></div>
+				<div class="fl" style="margin-left:34px;margin-top:10px;">
+					<span class="fl"><a href="javascript:;">独家报道</a></span><em class="fl"></em>
+					<span class="fl"><a href="javascript:;">SHOW场</a></span>
+					</div>
+			</div>
+			<ul class="clearfix" style="margin-top:25px;" >
+				<li class="fl" style="margin-right:20px;">
+					<a href="javascript:;">
+						<div class="dubo"></div>
+						<img src="images/92.jpg" title="时尚" height="253px" width="180px">
+						<div class="gray">
+							<p class="first">&nbsp揭秘时尚杂志高层“宫斗”</p>
+						</div>
+					</a>
+				</li>
+				<li class="scale fl">
+					<a href="javascript:;">
+						<img src="images/93.jpg" title="时尚">
+						<div class="gray">
+						<div class="zhen1"></div>
+							<p class="first">&nbsp刘雯5大女神特质虏获男神</p>
+						</div>
+					</a>
+				</li>
+				<li class="scale fl top">
+					<a href="javascript:;">
+						<img src="images/94.jpg" title="时尚">
+						<div class="gray">
+							<p class="first">&nbsp打造熟女风大地色系眼妆</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+</div>
+
+<div class="suction clearfix" id="suction">
+		<div class="fl logo"></div>
+		<div class="fl nav1" id="nav">导航</div>
+		<div class="fl text">
+			<input type="text" class="fl white" id="text" placeholder="框内字">
+			<div class="fl sou">搜索</div>
+		</div>
+		<!-- <div class="login copy_login">
+			<div class="baby"></div>
+			<div class="close"></div>
+			<div class="account">
+				<div class="clearfix">
+					<p class="fl">账 号 ：</p>
+					<input type="text" placeholder="请输入手机/邮箱" class="fl">
+				</div>
+				<div class="clearfix" style="margin-top:24px">
+					<p class="fl">密 码 ：</p>
+					<input type="text" placeholder="请输入密码" class="fl">
+				</div>
+			</div>
+			<div class="memory clearfix">
+				<input type="checkbox" checked="true" class="fl">
+				<p class="fl">记住我</p>
+				<a href="javascript:;" class="fl" style="padding-left:85px;">找回密码</a> 
+				<div class="fl" style="padding-left:11px;padding-right:11px;">|</div>
+				<a href="javascript:;" class="fl">立即注册</a>
+			</div>
+			<div class="loginto"><a href="javascript:;">登录</a></div>
+			<div class="other"></div>
+		</div>
+		<div class="enroll copy_en">
+			<div class="baby"></div>
+			<div class="close"></div>
+			<div class="account">
+				<div class="clearfix">
+					<p class="fl">手&nbsp&nbsp&nbsp机 ：</p>
+					<input type="text" placeholder="请输入手机号码" class="fl">
+				</div>
+				<div class="clearfix" style="margin-top:8px">
+					<p class="fl">密&nbsp&nbsp&nbsp码 ：</p>
+					<input type="text" placeholder="8~20位字母、数字或字符，至少包含两种" class="fl">
+				</div>
+				<div class="clearfix" style="margin-top:8px">
+					<p class="fl">验证码 ：</p>
+					<input type="text" placeholder="请输入右侧字母" class="fl" style="width:107px;height:30px;">
+					<div class="yzm fl"></div>
+					<div class="change fl"></div>
+				</div>
+			</div>
+			<div class="clearfix agree">
+				<input type="text" placeholder="8~20位字母、数字或字符，至少包含两种" class="fl" style="width:268px;height:30px;border:1px solid #ccc;padding-left:7px;">
+				<input type="checkbox" checked="true" class="fl" style="margin-top:10px; margin-right:10px;">
+				<p class="fl" style="margin-top:8px;">我同意</p>
+				<a href="javascript:;" class="fl" style="margin-top:8px;">《用户服务协议》</a>
+				<a href="javscript:;" class="fr" style="margin-top:8px;">立即登录</a>
+			</div>
+			<div class="loginto" style="margin-left:97px;width:278px; margin-top:20px;">
+				<a href="javascript:;">注册</a>
+			</div>
+		</div> -->
+		<div class="fl list">
+			
+			<ul class="menu clearfix">
+				<li class="fl copy_l"><a href="Landing.html">登录</a></li>
+				<li class="fl copy_e"><a href="Registered.html">注册</a></li>
+				<li class="fl"><a href="javascript:;">开通VIP</a></li>
+				<li class="fl upload" id="upload">
+					<a href="javascript:;">上传</a>
+					<div class="upload1" id="Upload1">
+						<a href="javascript:;" style="color:#000;margin-top:5px;">上传视频</a>
+						<a href="javascript:;" style="color:#000">制作视频</a>
+						<a href="javascript:;" style="color:#000">我的空间</a>
+						<a href="javascript:;" style="color:#000">视频管理</a>
+						<a href="javascript:;" style="color:#000">流量分析</a>
+						<a href="javascript:;" style="color:#000">申请分成</a>
+						<div class="jiao"></div>
+					</div>
+					<i></i>
+				</li>
+				<li class="fl download">
+					<a href="javascript:;">下载客户端</a>
+				</li>
+				<li class="fl message" id="copy_m">
+					<a href="javascript:;">消息</a>
+					<i></i>
+					<div class="message1" id="copy_m1">
+						<div class="jiao jiao1"></div>
+						<span class="active">更新提示</span>
+						<span>用户推荐</span>
+						<span style="margin-right:0;">系统通知</span>
+						<div class="tab ctab">
+							<div class="cactive">您还没有收到新的更新消息</div>
+							<div>暂时还没有新的推荐</div>
+							<div>您还没有登录，<a href="javascript:;" class="loginline copy_l">登录</a>后可以可以查看完整的通知列表</div>
+						</div>
+						<a href="javascript:;" class="andmore">查看更多</a>
+					</div>
+				</li>
+				<li class="fl" id="copy_pr">
+					<a href="javascript:;">播放记录</a>
+					<div id="copy_pr1" class="message1">
+						<div class="jiao jiao2"></div>
+						<div class="pr_text">
+							<p>暂无长视频（电视剧、纪录片、动漫、综艺、电影）播放记录，<b>查看全部</b></p>
+						</div>
+					</div>
+					<i></i>
+				</li>
+							<li class="fl my1"><a href="My.html">我的</a></li>
+			</ul>
+		</div>
+		<div class="nav2 clearfix" id="nav2">
+			<div class="fl run"></div>
+			<ul class="nav2_one fl">
+	            <li class="fl"><a href="javascript:;">娱乐</a></li>
+	            <li class="fl"><a href="javascript:;">体育</a></li>
+	            <li class="fl"><a href="javascript:;">资讯</a></li>
+	       	 </ul>
+	        <ul class="nav2_two fl">
+	         	<li class="fl"><a href="javascript:;">电影</a></li>
+	          	<li class="fl"><a href="javascript:;">电视剧</a></li>
+	          	<li class="fl"><a href="javascript:;">片花</a></li>
+	        	<li class="fl"><a href="javascript:;">综艺</a></li>
+	        	<li class="fl"><a href="javascript:;">微电影</a></li>
+	         	<li class="fl"><a href="javascript:;">脱口秀</a></li>
+	  		</ul>
+	      	<ul class="nav2_three fl">
+	        	<li class="fl"><a href="javascript:;">动漫</a></li>
+	         	<li class="fl"><a href="javascript:;">生活</a></li>
+	        	<li class="fl"><a href="javascript:;">少儿</a></li>
+	        	<li class="fl"><a href="javascript:;">母婴</a></li>
+	        	<li class="fl"><a href="javascript:;">游戏</a></li>
+	        	<li class="fl"><a href="javascript:;">健康</a></li>
+	        </ul>
+	      	<ul class="nav2_four fl">   
+	        	<li class="fl"><a href="javascript:;">音乐</a></li>
+	         	<li class="fl"><a href="javascript:;">搞笑</a></li>
+	         	<li class="fl"><a href="javascript:;">时尚</a></li>
+	        	<li class="fl"><a href="javascript:;">原创</a></li>
+	       	 	<li class="fl"><a href="javascript:;">旅游</a></li>
+	        	<li class="fl"><a href="javascript:;">拍客</a></li>
+	       	</ul>
+	      	<ul class="nav2_five fl">                
+	           	<li class="fl"><a href="javascript:;">财经</a></li>
+	        	<li class="fl"><a href="javascript:;">军事</a></li>
+	        	<li class="fl"><a href="javascript:;">科技</a></li>
+	        	<li class="fl"><a href="javascript:;">教育</a></li>
+	        	<li class="fl"><a href="javascript:;">汽车</a></li>
+	       	 	<li class="fl"><a href="javascript:;">纪录片</a></li>
+	      	</ul>
+	      	<!-- <ul class="nav2_six fl">
+	        	<li class="fl"><a href="javascript:;">风云榜</a></li>
+	        	<li class="fl"><a href="javascript:;">公益</a></li>
+	        	<li class="fl"><a href="javascript:;">全网影视</a></li>
+	        	<li class="fl"><a href="javascript:;">直播中心</a></li>
+	       	 	<li class="fl"><a href="javascript:;">爱奇艺搜索</a></li>
+	        	<li class="fl"><a href="javascript:;">爱奇艺出品</a></li>
+	       	</ul> -->
+	      	<!-- <ul class="nav2_seven fl">
+	        	<li class="fl"><a href="javascript:;">PPS游戏</a></li>
+	        	<li class="fl"><a href="javascript:;">PPS奇秀</a></li>
+	         	<li class="fl"><a href="javascript:;">应用商店</a></li>
+	        	<li class="fl"><a href="javascript:;">爱奇艺商城</a></li>
+	        	<li class="fl"><a href="javascript:;">个人中心</a></li>
+	    	</ul> -->
+	    </div>
+</div>
+
+	<script src="js/jquery-1.7.2.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>	

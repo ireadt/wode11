@@ -1,0 +1,225 @@
+/* 导航栏*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cl {
+    clear: both;
+}
+
+/* 正文 */
+body {
+    font-size: 14px;
+    font-family: "Arial", "Mircosoft YaHei", "SimSun";
+}
+
+/* 内中心 */
+.innerCenter {
+    width: 1000px;
+    margin: 0px auto;
+}
+
+/* 标题 */
+.header {
+    height: 58px;
+    background-color:rgb(30, 171, 206)
+    
+}
+
+.header .logo {
+    float: left;
+    padding-left: 14px;
+    margin-right: 39px;
+    width: 174px;
+}
+
+.header .nav {
+    float: left;
+    width: 607px;
+}
+
+.header .nav ul {
+    list-style: none;
+}
+
+.header .nav ul li {
+    float: left;
+    width: 100px;
+    border-left: 1px solid rgb(30, 171, 206);
+}
+
+.header .nav ul li a {
+    display: block;
+    width: 100px;
+    height: 58px;
+    line-height: 58px;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(17, 13, 3, 0.925);
+    font-weight: bold;
+}
+
+.header .nav ul li a:hover {
+    color: rgb(15, 51, 211);
+}
+.header .daili {
+    float: left;
+    margin-left: 12px;
+    padding-top: 12px;
+}
+/*代理销售*/
+.header .daili a {
+    display: block;
+    width: 98px;
+    height: 32px;
+    border: 1px solid rgb(30, 171, 206);
+    border-radius: 4px;
+    background-color: rgb(56, 90, 183);
+    line-height: 32px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* 内容(中下部分的背景及各标签设置)) */
+
+.content .product {
+    padding-top: 50px;
+    padding-bottom: 39px;
+    height: 191px;
+}
+
+.content .product ul {
+    list-style: none;
+}
+
+.content .product li {
+    float: left;
+    width: 218px;
+    height: 191px;
+    margin-right: 43px;
+}
+
+.content .product li.last {
+    width: 217px;
+    margin-right: 0px;
+}
+
+.content .product li a {
+    display: block;
+    height: 191px;
+    text-decoration: none;
+}
+
+.content .product li img {
+    width: 218px;
+    height: 128px;
+}
+
+.content .product li a h5 {
+    line-height: 30px;
+    color: #444866;
+    text-align: center;
+}
+
+.content .product li a p {
+    line-height: 32px;
+    color: #38B774;
+    text-align: center;
+    font-weight: bold;
+    background-repeat: no-repeat;
+    background-position: 150px 14px;
+}
+
+.content .product li a:hover {
+    background-color: #38B774;
+}
+
+.content .product li a:hover p {
+    color: rgb(218, 88, 88);
+}
+/* 左边新闻 */
+.content .info .news {
+    float: left;
+    width: 490px;
+    background-image: url(Tuku/beijing.jpg);
+    position: relative;
+}
+
+.content .info .news ul {
+    list-style: none;
+    padding-top: 48px;
+    padding-left: 20px;
+}
+
+.content .info .news ul li {
+    width: 458px;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px salmon;
+}
+
+.content .info .news ul li a {
+    float: left;
+    text-decoration: none;
+    color: cadetblue;
+    font-weight: bold;
+}
+
+.content .info .news ul li a:hover {
+    color: #38B774;
+}
+
+/*  专场应聘背景设计 */
+.content .info .jobs {
+    float: right;
+    width: 480px;
+    background-image: url(Tuku/beijing.jpg);
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-bottom: 27px;
+}
+
+.content .info .jobs .more {
+    float: left;
+    padding-left: 25px;
+}
+
+.content .info .jobs .more a:hover {
+    background-color: rgb(30, 171, 206);
+    border-color: #33B972;
+    color: #33B972;
+}
+
+.content .info .jobs h3 {
+    margin-top: 26px;
+    font-weight: bold;
+    color: rgb(250, 26, 10);
+}
+
+.content .info .jobs ul {
+    list-style: none;
+}
+.content .info .jobs ul li a {
+    display: block;
+    width: 300px;
+    height: 38px;
+    color:rgba(17, 13, 3, 0.925);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* 轮播图 */
+.carousel-inner img {
+    width: 100%;
+    height: 460px;
+}
+/* 说明版权*/
+footer{
+    background-color: rgb(197, 215, 241);
+    width: 100%;
+    clear: both;
+    line-height: 12px;
+}
